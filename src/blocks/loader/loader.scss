@@ -1,0 +1,29 @@
+.loader {
+    &__before {
+        margin-right: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #222222;
+    }
+    &__line {
+        width: 278px;
+        height: 2px;
+        background-color: #d7d4d4;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: #c6b393;
+        }
+    }
+    &__after {
+        margin-left: 14px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #222222;
+    }
+}

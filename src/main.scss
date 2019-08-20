@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+
+@import "./mixin/mixin.scss";
+
+.site {
+    background-color: #f4f4f4;
+    font-family: 'Fira Sans';
+}
+
+@import "./blocks/header/header.scss";
+@import "./blocks/hero/hero.scss";
+@import "./blocks/button/button.scss";
+@import "./blocks/loader/loader.scss";

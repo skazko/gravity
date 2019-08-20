@@ -1,0 +1,25 @@
+@mixin col($n) {
+    @include make-col-ready();
+    @include make-col($n);
+}
+
+@mixin col-small($bp, $size) {
+    @include media-breakpoint-down($bp) {
+        @include make-col($size);
+    }
+}
+
+@mixin hide-from($bp) {
+    @include media-breakpoint-down($bp) {
+        display: none;
+      }
+}
+
+@mixin container($width) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $width;
+}

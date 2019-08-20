@@ -1,0 +1,38 @@
+.hero{
+    &__container {
+        @include container(1140px);
+    }
+    &__row {
+        @include make-row();
+    }
+    &__left,
+    &__right {
+        @include col(6);
+    }
+    &__text {
+        padding-right: 65px;
+        margin-bottom: 55px;
+    }
+    &__button {
+        margin-bottom: 190px;
+    }
+}
+
+.page-title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: -1px;
+    padding-top: 65px;
+    margin-bottom: 30px;
+}
+
+.page-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    opacity: 0.7;
+    
+}
