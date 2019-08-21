@@ -1,0 +1,25 @@
+.user {
+    display: flex;
+    align-items: center;
+    &__img-mask {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex: 0 0 65px;
+        margin-right: 30px;
+    }
+    &__info {
+        flex: 0 0 190px;
+        h3 {
+            @include title();
+            line-height: 22px;
+            margin-bottom: 6px;
+        }
+        p {
+            @include paragraph-o7();
+            line-height: 18px;
+            margin: 0;
+        }
+    }
+}

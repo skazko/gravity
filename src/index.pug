@@ -4,12 +4,14 @@ include blocks/hero/hero
 include blocks/button/button
 include blocks/loader/loader
 include blocks/overlay/overlay
+include blocks/about/about
+include blocks/user/user
 
 doctype html
 html(lang="ru")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="main.css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&display=swap")
@@ -17,4 +19,5 @@ html(lang="ru")
     body.site
         +header
         +hero
+        +about
         

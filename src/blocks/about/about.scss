@@ -1,0 +1,28 @@
+.about {
+    margin-bottom: 142px;
+    @include container(1140px);
+    &__row {
+        @include make-row();
+    }
+    &__img,
+    &__info {
+        @include col(6);
+    }
+}
+
+.section-title {
+    @include big-title();
+    color: #222222;
+    margin-bottom: 30px;
+    padding-top: 37px;
+}
+
+.section-text {
+    @include paragraph-o7();
+    padding-right: 95px;
+    margin-bottom: 60px;
+}
+
+.section-text p:not(:last-child) {
+    margin-bottom: 20px;
+}

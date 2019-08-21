@@ -1,0 +1,7 @@
+mixin user(user)
+    +b.user
+        +e.img-mask
+            img(src= user.img, alt= user.name)
+        +e.info
+            h3= user.name
+            p= user.position
