@@ -8,4 +8,7 @@
     background-image: url('img/play.svg');
     background-repeat: no-repeat;
     background-position: center center;
+    &:hover {
+        cursor: pointer;
+    }
 }

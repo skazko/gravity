@@ -1,0 +1,18 @@
+- var menu = ['Multimedia', 'Interactive design',  'Packaging', 'Branding', 'Creative Strategy', 'UI/UX', 'Coding']
+mixin services
+  +b.SECTION.services
+    +e.container
+      +e.label
+        +label('services')
+      +e.row  
+        +b.H1.section-title We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details
+        +b.UL.menu
+          each val in menu
+            +e.item= val
+      +b.UL.slider
+        +e.LI.item
+          +overlay
+          +b.VIDEO.service-video(width="825" height="500" poster="img/service1.jpg")
+        +e.LI.item
+          img(width="825" height="500" src="img/service2.jpg", alt="Service")
+      +navigation

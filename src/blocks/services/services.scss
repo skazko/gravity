@@ -1,0 +1,50 @@
+.services {
+    margin-bottom: 180px;
+    &__container {
+        @include container(1140px);
+    }
+    &__row {
+        @include make-row();
+        .section-title{
+            @include col(6);
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+        .menu {
+            @include make-col-offset(1);
+            @include col(5);
+            margin-bottom: 0;
+            list-style: none;
+            -moz-column-count:2; /* Firefox */
+            -webkit-column-count:2;
+            column-count: 2;
+            column-gap: 60px;
+            padding-left: 50px;
+            &__item {
+                line-height: 28px;
+                margin-bottom: 21px;
+                @include paragraph-o7();
+                opacity: 0.5;
+                max-width: 189px;     
+            }
+        }
+        margin-bottom: 100px;
+    }
+    &__label {
+        margin-bottom: 40px;
+    }
+}
+.slider {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin-right: -125px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    &__item:not(:last-child) {
+        margin-right: 30px;
+        position: relative;
+    }
+}
+
