@@ -1,0 +1,50 @@
+.clients {
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background-color: #fafafa;
+    .section-title {
+        padding-top: 0;
+    }
+    &__container {
+        @include container(1140px);
+    }
+    &__row {
+        @include make-row();
+        margin-bottom: 80px;
+    }
+    &__title {
+        @include col(5);
+    }
+    &__text {
+        @include make-col-offset(2);
+        @include col(5);
+    }
+    &__label {
+        padding-top: 8px;
+        margin-bottom: 17px;
+        p {
+            opacity: 1;
+        }
+    }
+    &__description {
+        @include paragraph-o7();
+        p{
+            margin: 0;
+        }
+    }
+    &__logos {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                opacity: 0.15;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

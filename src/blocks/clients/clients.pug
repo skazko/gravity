@@ -1,0 +1,17 @@
+- var logoar = ['img/mi.svg', 'img/tinder.svg', 'img/apple.svg', 'img/nike.svg', 'img/amd.svg']
+mixin clients
+  +b.SECTION.clients
+    +e.container
+      +e.row
+        +e.title
+          +b.H2.section-title Our Clients
+        +e.text
+          +e.label
+            +label('we worked with')
+          +e.description
+            p Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.
+      +e.logos
+        ul
+          each logo in logoar
+            li
+              img(src= logo, alt="Logo")
