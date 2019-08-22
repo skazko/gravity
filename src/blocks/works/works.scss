@@ -1,0 +1,53 @@
+.works {
+    &__container {
+        @include container(1140px);
+    }
+    &__row {
+        @include make-row();
+        align-items: center;
+        margin-bottom: 108px;
+        .section-title {
+            @include col(6);
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+        .switcher {
+            @include col(6);
+            padding-left: 80px;
+        }
+    }
+    &__label {
+        margin-bottom: 40px;
+    }
+    
+    
+}
+
+.switcher {
+    &__item {
+        display: none;
+    }
+    &__label {
+        @include label();
+        opacity: 0.3;
+        margin-bottom: 0;
+    }
+    &__label:not(:last-child) {
+        margin-right: 23px;
+    }
+    :checked + &__label {
+        color: #1434e1;
+        opacity: 1;
+    }
+}
+
+.samples {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include make-row();
+    &__item {
+        @include col(4);
+        margin-bottom: 30px;
+    }
+}
