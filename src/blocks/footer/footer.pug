@@ -1,4 +1,4 @@
-- var menu= ['Travel', 'Explore', 'Works', 'About us', 'Contacts']
+- var menuf= ['Travel', 'Explore', 'Works', 'About us', 'Contacts']
 - var submenu= ['Terms', 'Promo', 'Download', 'News']
 - 
   var social = {
@@ -13,8 +13,8 @@ mixin footer
         +e.logo
           img(src="img/logo-white.svg", alt="Gravity")
         +e.menu
-          +b.UL.menu
-            each item in menu 
+          +b.UL.menu-footer
+            each item in menuf 
               +e.LI.item
                 a(href="#")= item
         +e.form
