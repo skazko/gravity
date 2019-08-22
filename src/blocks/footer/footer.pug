@@ -1,0 +1,37 @@
+- var menu= ['Travel', 'Explore', 'Works', 'About us', 'Contacts']
+- var submenu= ['Terms', 'Promo', 'Download', 'News']
+- 
+  var social = {
+    "twitter": "img/twitter.svg",
+    "linkedin": "img/linkedin.svg",
+    "google": "img/google.svg",
+    "facebook": "img/facebook.svg"}
+mixin footer
+  +b.SECTION.footer
+    +e.container
+      +e.up
+        +e.logo
+          img(src="img/logo-white.svg", alt="Gravity")
+        +e.menu
+          +b.UL.menu
+            each item in menu 
+              +e.LI.item
+                a(href="#")= item
+        +e.form
+          +b.FORM.email-back
+            +e.INPUT(type="email", name="email", placeholder="Your email")
+            +e.INPUT(type="submit", value="send")
+      hr
+      +e.bottom
+        +e.submenu
+          +b.UL.submenu
+            each item in submenu
+              +e.LI.item
+                a(href="#")= item
+            +e.item
+              +b.UL.social
+                each item, index in social
+                  +e.LI.item
+                    a(href="#")
+                      img(src= item, alt= index)
+
