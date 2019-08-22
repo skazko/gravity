@@ -1,0 +1,46 @@
+.testimonials {
+    margin-bottom: 175px;
+    &__container {
+        @include container(1140px);
+    }
+    &__row {
+        @include make-row();
+    }
+    &__text {
+        @include col(6);
+        position: relative;
+    }
+    &__photo {
+        @include make-col-offset(1);
+        @include col(5);
+    }
+    &__label {
+        margin-bottom: 75px;
+    }
+    &__heading {
+        margin-bottom: 120px;
+        .section-title {
+            padding-top: 0;
+        }
+    }
+    &__author {
+        margin-bottom: 15px;
+    }
+    &__navigation {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+    }
+}
+
+.position {
+    @include paragraph-o7();
+}
+
+.title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #222222;
+    margin: 0;
+}
